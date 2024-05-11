@@ -15,6 +15,6 @@ Please do not spam forums.
 
 ### List:
 
-[Forums - General 1](https://1d10t1c-stud10s.github.io/scripta-mirabilia/forums/general1)
+[Forums - General 1](https://scripta-mirabilia.github.io/main/forums/general1)
 
-[Forums - General 2](https://1d10t1c-stud10s.github.io/scripta-mirabilia/forums/general2)
+[Forums - General 2](https://scripta-mirabilia.github.io/main/forums/general2)
