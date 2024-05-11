@@ -9,7 +9,7 @@ permalink: /request/
 You can use the following form to:
 
 - reuqest a forum topic that doesn't already exist
-- request your own private forum for your own use ([read more](https://scripta-mirabilia.github.io/forums/rules))
+- request your own private forum for your own use ([read more](https://scripta-mirabilia.github.io/main//forums/rules))
 - request a correction about a certain thing that we may have incorrectly stated on our site
 - request a post about a certain topic of category, this can include a series
 
