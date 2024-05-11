@@ -13,7 +13,7 @@ You can find all existing series right here, with links to their pages!
 
 ### List:
 
-[Series - Cosmic Theories](https://1d10t1c-stud10s.github.io/scripta-mirabilia/series/cosmic-theories)
+[Series - Cosmic Theories](https://scripta-mirabilia.github.io/main/series/cosmic-theories)
 
-[Series - Bizarre Botany](https://1d10t1c-stud10s.github.io/scripta-mirabilia/series/bizarre-botany)
+[Series - Bizarre Botany](https://scripta-mirabilia.github.io/main/series/bizarre-botany)
 
