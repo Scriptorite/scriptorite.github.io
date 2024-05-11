@@ -11,17 +11,17 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "/scripta-mirabilia/assets/favicon-1248x1248.png",
+      "src": "/main/assets/favicon-1248x1248.png",
       "type": "image/png",
       "sizes": "1248x1248"
     },
     {
-      "src": "/scripta-mirabilia/assets/favicon-16x16.png",
+      "src": "/main/assets/favicon-16x16.png",
       "type": "image/png",
       "sizes": "312x312"
     },
     {
-      "src": "/scripta-mirabilia/assets/apple-touch-icon.png",
+      "src": "/main/assets/apple-touch-icon.png",
       "type": "image/png",
       "sizes": "312x312"
     },
