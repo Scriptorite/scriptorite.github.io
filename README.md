@@ -13,4 +13,4 @@
 
 ### Contribution
 
-You can fork the repository, then create you own posts under the _posts folder, for more, read our [small guide.](https://scripta-mirabilia.github.io/main/2024-05-03/tutorial-post)
+You can fork the repository, then create you own posts under the _posts folder, for more, read our [small guide.](https://scripta-mirabilia.github.io/2024-05-03/tutorial-post)
