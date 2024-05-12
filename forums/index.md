@@ -17,15 +17,15 @@ Please do not spam forums.
 
 ### General Discussions
 
-[Forums - General 1](https://scripta-mirabilia.github.io/main/forums/general1)
+[Forums - General 1](https://scripta-mirabilia.github.io/forums/general1)
 
-[Forums - General 2](https://scripta-mirabilia.github.io/main/forums/general2)
+[Forums - General 2](https://scripta-mirabilia.github.io/forums/general2)
 
 [Forums - General 3](https://scripta-mirabilia.github.io/main/forums/general3)
 
 ### Model United Nations Forums [Beta]
 
-[Request a MUN Forum here!](https://scripta-mirabilia.github.io/main/request/)
+[Request a MUN Forum here!](https://scripta-mirabilia.github.io/request/)
 
 ### Scripta Mirabilia Writer's Forums
 
