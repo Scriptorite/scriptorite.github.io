@@ -21,7 +21,7 @@ Please do not spam forums.
 
 [Forums - General 2](https://scripta-mirabilia.github.io/forums/general2)
 
-[Forums - General 3](https://scripta-mirabilia.github.io/main/forums/general3)
+[Forums - General 3](https://scripta-mirabilia.github.io/forums/general3)
 
 ### Model United Nations Forums [Beta]
 
