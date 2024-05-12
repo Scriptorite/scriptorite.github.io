@@ -5,23 +5,23 @@
   "display": "standalone",
   "name": "Scripta Mirabilia",
   "orientation": "any",
-  "scope": "/main/",
+  "scope": "/",
   "short_name": "Scripta Mirabilia",
-  "start_url": "/main/",
+  "start_url": "/",
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "/main/assets/favicon-1248x1248.png",
+      "src": "/assets/favicon-1248x1248.png",
       "type": "image/png",
       "sizes": "1248x1248"
     },
     {
-      "src": "/main/assets/favicon-16x16.png",
+      "src": "/assets/favicon-16x16.png",
       "type": "image/png",
       "sizes": "312x312"
     },
     {
-      "src": "/main/assets/apple-touch-icon.png",
+      "src": "/assets/apple-touch-icon.png",
       "type": "image/png",
       "sizes": "312x312"
     },
