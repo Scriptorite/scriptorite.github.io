@@ -10,15 +10,21 @@ comments: false
 
 This is for anyone who wishes to write on Scripta Mirabilla
 
-###### This service is limited to 1DST members ONLY.
+Prerequisites:
+- a github account
+- basic markdown knowledge
 
 ---
 
 1. You'll need to navigate to the repo for this site on Github, then go to `_posts` folder, you will see all the past posts already on there.
 
-2. Create a new file and name it `*year*-*month*-*day*-*nameofpost*.md`, make sure it is under the folder `_posts`
+2. Fork the repository if you aren't a member of the organisation
    
-3. You will need to put in the `layout, title, author and tags` parameters before continuing.
+3. If you happen to be a member, remember to use the `_drafts` folder to construct your post before moving it over to `_posts`
+
+4. Create a new file and name it `*year*-*month*-*day*-*nameofpost*.md`, make sure it is under the folder `_posts`
+   
+5. You will need to put in the `layout, title, author and tags` parameters before continuing.
    
    - Follow the template for the parameters:
 
@@ -40,4 +46,6 @@ This is for anyone who wishes to write on Scripta Mirabilla
    
 5. Finally, press 'commit changes' and wait for Github to serve it onto the site.
    
-6. You're done! You can now view the post on the site itself! 
+6. If you didn't have access to the main repository, you can use a pull request, we will review and accept.
+
+7. If everything goes well, your post will appear on the site!
