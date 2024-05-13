@@ -29,4 +29,4 @@ Please do not spam forums.
 
 ### Scripta Mirabilia Writer's Forums
 
-[WIP, please try again another time]()
+[Forums - Writer 1](https://scripta-mirabilia.github.io/forums/writer1)
