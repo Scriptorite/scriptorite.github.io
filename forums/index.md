@@ -30,3 +30,5 @@ Please do not spam forums.
 ### Scripta Mirabilia Writer's Forums
 
 [Forums - Writer 1](https://scripta-mirabilia.github.io/forums/writer1)
+
+[Forums - Writer 2](https://scripta-mirabilia.github.io/forums/writer2)
