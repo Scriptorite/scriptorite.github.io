@@ -4,6 +4,11 @@
   {% include head.html %}
 
   <body>
+  <body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
   <body style="background-color:#ded3c5;">
    <script>
    if (typeof navigator.serviceWorker !== 'undefined') {
