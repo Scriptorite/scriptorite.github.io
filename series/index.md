@@ -4,7 +4,7 @@ title: Series - Main Page
 permalink: /series/
 ---
 
-![SMSBanner](https://1d10t1c-stud10s.github.io/scripta-mirabilia/SMSBanner.svg)
+![SMSBanner](https://scripta-mirabilia.github.io/SMPBannerV2.png)
 
 ## Post Series
 
