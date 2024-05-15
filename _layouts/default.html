@@ -5,20 +5,26 @@
 
   <body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-  <div id="loading"></div>  
+  <div id="spinner"></div>  
   <body style="background-color:#ded3c5;">
   <script>
-    $.get("/assets/html/loader.html", function(data){
+    $.get("/loader.html", function(data){
   $("#loading").replaceWith(data);
 });
     $(window).on('load', function(){
   setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
 });
 function removeLoader(){
-    $( ".loader-wrapper" ).fadeOut(500, function() {
+    $( ".double-bounce1" ).fadeOut(500, function() {
       // fadeOut complete. Remove the loading div
-      $( ".loader-wrapper" ).remove(); //makes page more lightweight 
-  });   
+      $( ".double-bounce1" ).remove(); //makes page more lightweight 
+    }
+  );
+    $( ".double-bounce2" ).fadeOut(500, function() {
+      // fadeOut complete. Remove the loading div
+      $( ".double-bounce2" ).remove(); //makes page more lightweight 
+    }
+  );   
 }
 
   </script>
