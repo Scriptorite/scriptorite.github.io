@@ -4,30 +4,7 @@
   {% include head.html %}
 
   <body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-  <div id="spinner"></div>  
   <body style="background-color:#ded3c5;">
-  <script>
-    $.get("/loader.html", function(data){
-  $("#loading").replaceWith(data);
-});
-    $(window).on('load', function(){
-  setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
-});
-function removeLoader(){
-    $( ".double-bounce1" ).fadeOut(500, function() {
-      // fadeOut complete. Remove the loading div
-      $( ".double-bounce1" ).remove(); //makes page more lightweight 
-    }
-  );
-    $( ".double-bounce2" ).fadeOut(500, function() {
-      // fadeOut complete. Remove the loading div
-      $( ".double-bounce2" ).remove(); //makes page more lightweight 
-    }
-  );   
-}
-
-  </script>
    <script>
    if (typeof navigator.serviceWorker !== 'undefined') {
      navigator.serviceWorker.register('sw.js')
@@ -41,5 +18,18 @@ function removeLoader(){
     </main>
 
     {% include footer.html %}
+    <script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
   </body>
 </html>
