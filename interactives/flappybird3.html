@@ -145,13 +145,13 @@
             // Draw distant hills
             context.fillStyle = '#90EE90'; // Light green color for hills
             context.beginPath();
-            context.moveTo(0, canvas.height);
-            context.lineTo(0, canvas.height - 100);
-            context.lineTo(100, canvas.height - 200);
-            context.lineTo(200, canvas.height - 150);
-            context.lineTo(300, canvas.height - 180);
-            context.lineTo(400, canvas.height - 100);
-            context.lineTo(canvas.width, canvas.height);
+            context.moveTo(0, canvas.height - 100);
+            context.lineTo(0, canvas.height - 100 - 100);
+            context.lineTo(100, canvas.height - 100 - 200);
+            context.lineTo(200, canvas.height - 100 - 150);
+            context.lineTo(300, canvas.height - 100 - 180);
+            context.lineTo(400, canvas.height - 100 - 100);
+            context.lineTo(canvas.width, canvas.height - 100);
             context.fill();
 
             // Apply lighting effect (gradual color change)
