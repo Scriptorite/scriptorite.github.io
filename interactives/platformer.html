@@ -24,7 +24,7 @@
         // Player properties
         const player = {
             x: 50,
-            y: 300,
+            y: 0,
             width: 50,
             height: 50,
             speed: 5,
@@ -61,17 +61,28 @@
                 // Apply vertical velocity
                 this.y += this.velocityY;
 
-                // Collision with ground
-                if (this.y + this.height >= canvas.height) {
-                    this.y = canvas.height - this.height;
-                    this.grounded = true;
-                }
+                // Check for ground collision
+                this.checkGroundCollision();
 
-                // Collision with ceiling
+                // Check for ceiling collision
                 if (this.y <= 0) {
                     this.y = 0;
                     this.velocityY = 0;
                 }
+            },
+            checkGroundCollision() {
+                // Check collision with each platform
+                platforms.forEach(platform => {
+                    if (
+                        this.x + this.width > platform.x &&
+                        this.x < platform.x + platform.width &&
+                        this.y + this.height >= platform.y &&
+                        this.y < platform.y
+                    ) {
+                        this.y = platform.y - this.height;
+                        this.grounded = true;
+                    }
+                });
             }
         };
 
