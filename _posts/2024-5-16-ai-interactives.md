@@ -1,7 +1,7 @@
 ---
 layout: post
-title: {Interactive} Tests - Using AI to generate games
-author: Dev10us
+title: "{Interactive} Tests - Using AI to generate games"
+author: "Dev10us"
 tags: interactive ai test
 ---
 
