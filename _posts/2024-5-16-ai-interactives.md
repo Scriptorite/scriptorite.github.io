@@ -1,6 +1,6 @@
 ---
 layout: post
-ttile: "{Interactive} Tests - Using AI to 'generate' games"
+ttile: {Interactive} Tests - Using AI to generate games
 author: Dev10us
 tags: interactive ai test
 ---
@@ -18,7 +18,7 @@ Here's how it went.
 
 The classic game, flappy bird, we asked ChatGPT to code one in HTML and JS, with a total of 4 versions, best one showcased here.
 
-<iframe src="https://scripta-mirabilia.github.io/interactives/flappybird4.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+(iFrame removed due to a bug)
 
 [fullscreen?](https://scripta-mirabilia.github.io/interactives/flappybird4.html)
 
