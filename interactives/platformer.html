@@ -44,7 +44,7 @@
 
                 // Jumping
                 if (keys['Space'] && this.grounded) {
-                    this.velocityY -= this.jumpPower;
+                    this.velocityY = -this.jumpPower; // Set velocity to jump power
                     this.grounded = false;
                 }
 
