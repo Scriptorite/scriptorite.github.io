@@ -40,8 +40,6 @@
                 // Gravity
                 if (!this.grounded) {
                     this.velocityY += 0.5;
-                } else {
-                    this.velocityY = 0;
                 }
 
                 // Jumping
@@ -72,12 +70,13 @@
             },
             checkGroundCollision() {
                 // Check collision with each platform
+                this.grounded = false;
                 platforms.forEach(platform => {
                     if (
                         this.x + this.width > platform.x &&
                         this.x < platform.x + platform.width &&
                         this.y + this.height >= platform.y &&
-                        this.y < platform.y
+                        this.y < platform.y + platform.height
                     ) {
                         this.y = platform.y - this.height;
                         this.grounded = true;
