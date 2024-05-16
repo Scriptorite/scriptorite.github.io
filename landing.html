@@ -1,0 +1,69 @@
+<head>
+  <style>
+    body,
+    html,
+    h1 {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: white;
+      font-size: 4rem;
+      text-align: center;
+    }
+    section {
+      height: 100vh;
+    }
+    .tag {
+    }
+
+    .tag {
+      opacity: 0;
+      transform: translate(0, 10vh);
+      transition: all 1s;
+    }
+
+    .tag.visible {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+.yellow {
+  background-color: lightyellow;
+}
+.red {
+  background-color: lightcoral;
+}
+.blue {
+  background-color: lightblue;
+}
+.green {
+  background-color: lightgreen;
+}
+
+  </style>
+</head>
+<body>
+  <section class="yellow"><h1>foobar</h1></section>
+  <section class="tag red"><h1>foobar</h1></section>
+  <section class="tag blue"><h1>foobar</h1></section>
+  <section class="tag green"><h1>foobar</h1></section>
+  <script>
+    $(document).on("scroll", function() {
+  var pageTop = $(document).scrollTop();
+  var pageBottom = pageTop + $(window).height();
+  var tags = $(".tag");
+
+  for (var i = 0; i < tags.length; i++) {
+    var tag = tags[i];
+
+    if ($(tag).position().top < pageBottom) {
+      $(tag).addClass("visible");
+    } else {
+      $(tag).removeClass("visible");
+    }
+  }
+});
+
+  </script>
+</body>
