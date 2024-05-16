@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /landing/
+permalink: /features/
 ---
 
 # Scripta Mirabilia
