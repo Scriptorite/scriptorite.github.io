@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Platformer Game</title>
+    <style>
+        body { 
+            margin: 0;
+            overflow: hidden;
+        }
+        canvas { 
+            display: block; 
+            margin: 0 auto; 
+            background-color: #87CEEB; /* Sky Blue */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+
+        // Player properties
+        const player = {
+            x: 50,
+            y: 300,
+            width: 50,
+            height: 50,
+            speed: 5,
+            jumpPower: 12,
+            velocityY: 0,
+            grounded: false,
+            color: 'red',
+            draw() {
+                context.fillStyle = this.color;
+                context.fillRect(this.x, this.y, this.width, this.height);
+            },
+            update() {
+                // Gravity
+                if (!this.grounded) {
+                    this.velocityY += 0.5;
+                } else {
+                    this.velocityY = 0;
+                }
+
+                // Jumping
+                if (keys['Space'] && this.grounded) {
+                    this.velocityY -= this.jumpPower;
+                    this.grounded = false;
+                }
+
+                // Movement
+                if (keys['ArrowRight']) {
+                    this.x += this.speed;
+                }
+                if (keys['ArrowLeft']) {
+                    this.x -= this.speed;
+                }
+
+                // Apply vertical velocity
+                this.y += this.velocityY;
+
+                // Collision with ground
+                if (this.y + this.height >= canvas.height) {
+                    this.y = canvas.height - this.height;
+                    this.grounded = true;
+                }
+
+                // Collision with ceiling
+                if (this.y <= 0) {
+                    this.y = 0;
+                    this.velocityY = 0;
+                }
+            }
+        };
+
+        // Key controls
+        const keys = {};
+
+        window.addEventListener('keydown', event => {
+            keys[event.code] = true;
+        });
+
+        window.addEventListener('keyup', event => {
+            keys[event.code] = false;
+        });
+
+        // Platform properties
+        const platforms = [
+            { x: 0, y: 550, width: 800, height: 50 },
+            { x: 200, y: 400, width: 200, height: 20 },
+            { x: 500, y: 300, width: 200, height: 20 }
+            // Add more platforms as needed
+        ];
+
+        // Enemy properties
+        const enemies = [
+            { x: 600, y: 500, width: 30, height: 30, color: 'purple', speed: 3 },
+            { x: 400, y: 350, width: 30, height: 30, color: 'purple', speed: 2 },
+            // Add more enemies as needed
+        ];
+
+        // Camera properties
+        let cameraX = 0;
+
+        function updateCamera() {
+            // Adjust camera position based on player's x-coordinate
+            if (player.x > canvas.width / 2) {
+                cameraX = player.x - canvas.width / 2;
+            } else {
+                cameraX = 0;
+            }
+        }
+
+        function drawPlatforms() {
+            platforms.forEach(platform => {
+                context.fillStyle = 'brown';
+                context.fillRect(platform.x - cameraX, platform.y, platform.width, platform.height);
+            });
+        }
+
+        function drawEnemies() {
+            enemies.forEach(enemy => {
+                context.fillStyle = enemy.color;
+                context.fillRect(enemy.x - cameraX, enemy.y, enemy.width, enemy.height);
+            });
+        }
+
+        function checkEnemyCollision() {
+            enemies.forEach(enemy => {
+                if (
+                    player.x < enemy.x + enemy.width &&
+                    player.x + player.width > enemy.x &&
+                    player.y < enemy.y + enemy.height &&
+                    player.y + player.height > enemy.y
+                ) {
+                    // Player collided with enemy
+                    alert('Game Over! You were caught by an enemy.');
+                    document.location.reload();
+                }
+            });
+        }
+
+        function gameLoop() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            updateCamera();
+
+            // Draw platforms and enemies
+            drawPlatforms();
+            drawEnemies();
+
+            // Draw player
+            player.draw();
+
+            // Update player
+            player.update();
+
+            // Check for enemy collisions
+            checkEnemyCollision();
+
+            requestAnimationFrame(gameLoop);
+        }
+
+        gameLoop();
+    </script>
+</body>
+</html>
