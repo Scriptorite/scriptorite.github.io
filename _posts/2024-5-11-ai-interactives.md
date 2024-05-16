@@ -28,3 +28,6 @@ The classic game, flappy bird, we asked ChatGPT to code one in HTML and JS, with
 
 A very generic platformer game, 1 version but was redone multiple times.
 
+<iframe src="https://scripta-mirabilia.github.io/interactives/platformer.html" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
+
+[fullscreen?](https://scripta-mirabilia.github.io/interactives/platformer.html)
