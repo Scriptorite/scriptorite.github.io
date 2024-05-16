@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Flappy Bird</title>
+    <style>
+        body { text-align: center; }
+        canvas { display: block; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <h1>Flappy Bird</h1>
+    <canvas id="canvas" width="400" height="600"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+
+        const bird = {
+            x: 50,
+            y: 150,
+            width: 30,
+            height: 20,
+            gravity: 0.6,
+            lift: -15,
+            velocity: 0,
+            draw() {
+                context.fillStyle = 'yellow';
+                context.fillRect(this.x, this.y, this.width, this.height);
+            },
+            update() {
+                this.velocity += this.gravity;
+                this.velocity *= 0.9;  // air resistance
+                this.y += this.velocity;
+                if (this.y + this.height > canvas.height) {
+                    this.y = canvas.height - this.height;
+                    this.velocity = 0;
+                }
+                if (this.y < 0) {
+                    this.y = 0;
+                    this.velocity = 0;
+                }
+            },
+            flap() {
+                this.velocity += this.lift;
+                createParticles(this.x + this.width / 2, this.y + this.height / 2, 5);
+            }
+        };
+
+        const particles = [];
+
+        function createParticles(x, y, count) {
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x: x,
+                    y: y,
+                    size: Math.random() * 3 + 1,  // random size between 1 and 4
+                    speedX: Math.random() * 3 - 1.5,  // random speed between -1.5 and 1.5 horizontally
+                    speedY: Math.random() * -3 - 1,  // random speed between -1 and -4 vertically (upward direction)
+                    color: 'orange',  // particle color
+                    opacity: 1  // initial opacity
+                });
+            }
+        }
+
+        function drawParticles() {
+            particles.forEach(particle => {
+                context.fillStyle = `rgba(255, 165, 0, ${particle.opacity})`; // Orange color with varying opacity
+                context.beginPath();
+                context.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+                context.fill();
+            });
+        }
+
+        function updateParticles() {
+            particles.forEach((particle, index) => {
+                particle.x += particle.speedX;
+                particle.y += particle.speedY;
+                particle.opacity -= 0.03;  // decrease opacity
+                if (particle.opacity <= 0) {
+                    particles.splice(index, 1);  // remove particle from array if opacity becomes 0 or less
+                }
+            });
+        }
+
+        const pipes = [];
+        const pipeWidth = 40;
+        const pipeGap = 120;
+
+        function addPipe() {
+            const height = Math.floor(Math.random() * (canvas.height - pipeGap));
+            pipes.push({
+                x: canvas.width,
+                topHeight: height,
+                bottomY: height + pipeGap,
+                width: pipeWidth,
+            });
+        }
+
+        function drawPipes() {
+            pipes.forEach(pipe => {
+                // Draw top pipe
+                context.fillStyle = 'green';
+                context.fillRect(pipe.x, 0, pipe.width, pipe.topHeight);
+                
+                // Draw bottom pipe
+                context.fillRect(pipe.x, pipe.bottomY, pipe.width, canvas.height - pipe.bottomY);
+            });
+        }
+
+        function updatePipes() {
+            pipes.forEach(pipe => {
+                pipe.x -= 2;
+            });
+            if (pipes.length > 0 && pipes[0].x < -pipeWidth) {
+                pipes.shift();
+            }
+        }
+
+        function checkCollision() {
+            for (let pipe of pipes) {
+                if (
+                    bird.x < pipe.x + pipe.width &&
+                    bird.x + bird.width > pipe.x &&
+                    (bird.y < pipe.topHeight || bird.y + bird.height > pipe.bottomY)
+                ) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        let score = 0;
+
+        function drawScore() {
+            context.fillStyle = 'black';
+            context.font = '20px Arial';
+            context.fillText(`Score: ${score}`, 10, 20);
+        }
+
+        // Background variables
+        let bgX = 0;
+        const bgSpeed = 1;
+
+        function drawBackground() {
+            // Clear canvas
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw distant hills
+            context.fillStyle = '#90EE90'; // Light green color for hills
+            context.beginPath();
+            context.moveTo(0, canvas.height - 100);
+            context.lineTo(0, canvas.height - 100 - 100);
+            context.lineTo(100, canvas.height - 100 - 200);
+            context.lineTo(200, canvas.height - 100 - 150);
+            context.lineTo(300, canvas.height - 100 - 180);
+            context.lineTo(400, canvas.height - 100 - 100);
+            context.lineTo(canvas.width, canvas.height - 100);
+            context.fill();
+
+            // Apply lighting effect (gradual color change)
+            const gradient = context.createLinearGradient(0, 0, 0, canvas.height);
+            gradient.addColorStop(0, '#87CEFA'); // Light sky blue (top)
+            gradient.addColorStop(1, '#70c5ce'); // Darker cyan (bottom)
+            context.fillStyle = gradient;
+            context.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function updateBackground() {
+            bgX -= bgSpeed;
+            if (bgX <= -canvas.width) {
+                bgX = 0;
+            }
+        }
+
+        function gameLoop() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            drawBackground();
+            bird.update();
+            bird.draw();
+
+            if (frames % 90 === 0) {
+                addPipe();
+                score++;
+            }
+
+            drawPipes();
+            updatePipes();
+            drawScore();
+
+            if (checkCollision()) {
+                // Epic screenshake
+                for (let i = 0; i < 20; i++) {
+                    const shakeAmount = Math.random() * 10 - 5;
+                    canvas.style.transform = `translate(${shakeAmount}px, ${shakeAmount}px)`;
+                }
+                setTimeout(() => {
+                    canvas.style.transform = 'translate(0, 0)';
+                }, 100);
+
+                alert('Game Over! Score: ' + score);
+                document.location.reload();
+            }
+
+            updateParticles();
+            drawParticles();
+
+            updateBackground();
+            frames++;
+
+            // Reward at 50 points
+            if (score === 50) {
+                alert('Congratulations! You reached 50 points!');
+            }
+
+            requestAnimationFrame(gameLoop);
+        }
+
+        let frames = 0;
+
+        document.addEventListener('keydown', event => {
+            if (event.code === 'Space') {
+                bird.flap();
+            }
+        });
+
+        gameLoop();
+    </script>
+</body>
+</html>
