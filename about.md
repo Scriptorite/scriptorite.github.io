@@ -5,9 +5,9 @@ author: "1D10T1C STUD10S"
 permalink: /about/
 ---
 
-<img src="https://scripta-mirabilia.github.io/SMAbout.png" alt="Banner" class="center">
-
 # Scripta Mirabilia
+
+<img src="https://scripta-mirabilia.github.io/SMAbout.png" alt="Banner" class="center">
 
 Hey there! This is 1D10T1C-STUD10S's small website for anything... Anything at all.
 
