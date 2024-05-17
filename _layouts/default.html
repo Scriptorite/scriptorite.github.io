@@ -8,6 +8,7 @@
     
     
 <div id="loader"></div>
+<p id="loadertext">Our site down? Contact us!</p>
 
 <div style="display:none;" id="myDiv" class="animate-bottom">
    <script>
@@ -32,6 +33,7 @@ function myFunction() {
 
 function showPage() {
   document.getElementById("loader").style.display = "none";
+  document.getElementById("loadertext").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
 </script>
