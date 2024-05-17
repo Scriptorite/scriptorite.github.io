@@ -6,6 +6,8 @@ tags: start tutorial
 comments: false
 ---
 
+<img src="https://scripta-mirabilia.github.io/SMLanding3.png" alt="Banner" class="center">
+
 # Tutorial Post
 
 This is for anyone who wishes to write on Scripta Mirabilla
