@@ -4,7 +4,7 @@ title: "Request Form"
 permalink: /request/
 ---
 
-![SMFBanner](https://scripta-mirabilia.github.io/SMRBanner.png)
+<img src="https://scripta-mirabilia.github.io/SMRBanner.png" alt="Banner" class="center">
 
 # Scripta Mirabilia Form:
 
