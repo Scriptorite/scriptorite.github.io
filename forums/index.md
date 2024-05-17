@@ -4,7 +4,7 @@ title: Forums - Main Page
 permalink: /forums/
 ---
 
-![SMFBanner](https://scripta-mirabilia.github.io/SMFBannerV2.png)
+<img src="SMFBannerV2.png" alt="Banner" class="center">
 
 ## Scripta Mirabilia Forums
 
