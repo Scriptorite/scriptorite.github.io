@@ -27,3 +27,23 @@ When the Japanese attacked Pearl Harbour, they knew they were messing with a pow
 
 Then why attack?
 
+First we must look into Japan's motive.
+
+At that current point in time, Japan was a militaristic and authoritarian country, ever since the Meji Restoration, it has set out on conquering land for itself. 
+
+
+![1000059783](https://github.com/Scripta-Mirabilia/scripta-mirabilia.github.io/assets/112738649/bcf1e06c-a447-40b6-884e-ce741257f9fe)
+> USS Lexington, source: Wikipedia
+
+In WW2, the US were a major obstacle in their conquest. Since the US had a Pacific Fleet, the Japanese could have wanted to rid any sort of potential resistance against them in the Pacific or in Asia.
+
+One main feature of the fleet (US) was thei aircraft carriers, which the Japanese were hoping to get rid of by attacking the naval base, however the aircraft carriers happened to no be there on that exact day, so their primary objective could not be achieved.
+
+---
+
+## Conclusion
+
+In the end, the attack was a big fail.\
+With the attackers not achieving their goals and bringing the US into the war (directly). 
+
+##### Inspired by multiple Quora posts and various Wikipedia and website pages
