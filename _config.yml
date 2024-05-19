@@ -1,8 +1,7 @@
 title: Scripta Mirabilia
-url: "posts"
 remote_theme: chesterhow/tale
 
-permalink:    posts/:year-:month-:day/:title
+permalink:    /:year-:month-:day/:title
 paginate:     5
 posts: "/posts"
 
