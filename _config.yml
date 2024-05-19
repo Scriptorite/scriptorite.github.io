@@ -1,5 +1,5 @@
 title: Scripta Mirabilia
-url: 
+url: "posts"
 remote_theme: chesterhow/tale
 
 permalink:    posts/:year-:month-:day/:title
