@@ -3,6 +3,7 @@ remote_theme: chesterhow/tale
 
 permalink:    /:year-:month-:day/:title
 paginate:     5
+paginate-path: /posts/
 
 plugins:
   - jekyll-paginate
