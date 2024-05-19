@@ -2,8 +2,9 @@
 layout: default
 ---
 
-
-<img src="https://scripta-mirabilia.github.io/SMBannerV4.png" alt="Banner" class="center">
+{% if paginator.page == 1 %}
+  <!-- Display non-paginated content here -->
+  <img src="https://scripta-mirabilia.github.io/SMBannerV4.png" alt="Banner" class="center">
 <!--<p style="text-align:center;"><img src="https://scripta-mirabilia.github.io/SMBannerV4.png" alt="SMBanner"></p> -->
 <p>Welcome to 1D10T1C-STUD10S&#39;s small project! A site about anything interesting. Simple and for anyone who desires to share anything.</p>
 <p>Enjoy the random content!</p>
@@ -14,6 +15,7 @@ Go <a href="https://1d10t1c-stud10s.github.io">here!</a></p>
 <p>Our landing page! <a href="https://scripta-mirabilia.github.io/landing/">To our landing page!</a></p>
 <p>Scripta Mirabilia isn't just about posts! View the full feature set <a href="https://scripta-mirabilia.github.io/features/">here!</a></p>
 <hr>
+{% endif %}
 
 <div class="catalogue">
   {% for post in site.posts %}
