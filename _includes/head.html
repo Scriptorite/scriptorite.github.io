@@ -101,6 +101,35 @@
 		transform: translateY(0);
 	}
 }
+	  details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  background-color: #666; /* changed to match text color */
+  color: #666; /* text color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+summary::after {
+  content: "\25BE"; /* ▼ */
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+details[open] summary::after {
+  content: "\25B4"; /* ▲ */
+}
+
+details p {
+  margin-bottom: 20px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
 </style>
 
