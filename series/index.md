@@ -15,7 +15,7 @@ You can find all existing series right here, with links to their pages!
 
 ### List:
 
-[Series - Cosmic Theories](https://scripta-mirabilia.github.io/series/cosmic-theories)
+[Series - Cosmic Theories](https://scriptorite.github.io/series/cosmic-theories)
 
-[Series - Bizarre Botany](https://scripta-mirabilia.github.io/series/bizarre-botany)
+[Series - Bizarre Botany](https://scriptorite.github.io/series/bizarre-botany)
 
