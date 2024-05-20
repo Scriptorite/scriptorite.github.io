@@ -3,10 +3,10 @@
   "description": "Written Wonder by 1DST",
   "dir": "ltr",
   "display": "standalone",
-  "name": "Scripta Mirabilia",
+  "name": "Scriptorite",
   "orientation": "any",
   "scope": "/",
-  "short_name": "Scripta Mirabilia",
+  "short_name": "Scriptorite",
   "start_url": "/",
   "theme_color": "#ffffff",
   "icons": [
