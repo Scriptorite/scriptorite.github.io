@@ -4,14 +4,14 @@ title: "Request Form"
 permalink: /request/
 ---
 
-<img src="https://scripta-mirabilia.github.io/SMRBanner.png" alt="Banner" class="center">
+<img src="https://scriptorite.github.io/SMRBanner.png" alt="Banner" class="center">
 
 # Scripta Mirabilia Form:
 
 You can use the following form to:
 
 - reuqest a forum topic that doesn't already exist
-- request your own private forum for your own use ([read more](https://scripta-mirabilia.github.io/forums/rules))
+- request your own private forum for your own use ([read more](https://scriptorite.github.io/forums/rules))
 - request a correction about a certain thing that we may have incorrectly stated on our site
 - request a post about a certain topic of category, this can include a series
 
