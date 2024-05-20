@@ -7,7 +7,7 @@ permalink: /about/
 
 # Scripta Mirabilia
 
-<img src="https://scripta-mirabilia.github.io/SMAbout.png" alt="Banner" class="center">
+<img src="https://scriptorite.github.io/SMAbout.png" alt="Banner" class="center">
 
 Hey there! This is 1D10T1C-STUD10S's small website for anything... Anything at all.
 
@@ -15,9 +15,11 @@ Especially for **MIND BLOWING FACTS AND THEORIES AND SO, SO MUCH MORE!**
 
 _Sorry._
 
+The simplest, minimalistic, quick and accessible for information sharing.
+
 ---
 
-##### "scripta mirabilia" means "written wonders" in English!
+##### Our old name, "scripta mirabilia" means "written wonders" in English!
 
 ---
 
