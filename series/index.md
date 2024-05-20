@@ -4,7 +4,7 @@ title: Series - Main Page
 permalink: /series/
 ---
 
-<img src="https://scripta-mirabilia.github.io/SMPBannerV2.png" alt="Banner" class="center">
+<img src="https://scriptorite.github.io/SMPBannerV2.png" alt="Banner" class="center">
 
 ## Post Series
 
