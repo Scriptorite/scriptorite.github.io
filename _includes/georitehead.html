@@ -1,0 +1,182 @@
+<head>
+  <link rel="manifest" href="/manifest.json">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="Jq7ti0H2S7XbJhN1TBIajTwDni7ICrDz7datSE-eIoA" />
+  <meta name="description" content="The simplest information sharing site, with forums, posts and much more!" />
+  <style>
+    html{
+      colour: #c8b6f0;
+    }
+/* Center the loader */
+#loader {
+  width: 40px;
+  height: 40px;
+  background-color: #802419;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+}
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
+    }
+   #loadertext {
+  text-align: center;
+   }
+    #loaderimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  max-inline-size: 100%;
+  block-size: auto;
+    }
+    .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 30px 0 30px;
+  border-color: #802419 transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: pulse 2s infinite;
+} 
+
+@keyframes pulse {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+details {
+  bordetails {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  margin: 0 auto; /* added to center the details element */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+  list-style: none;
+  background-color: #610701;
+  color: #fff;
+  padding: 10px;
+}
+
+summary::after {
+  content: "\25BE"; /* ▼ */
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+details[open] summary::after {
+  content: "\25B4"; /* ▲ */
+}
+
+details p {
+  margin-bottom: 20px;
+  color: #610701;
+}
+
+hr {
+  border: none; /* remove the default border */
+  height: 1px; /* set the height to 1px */
+  background-color: #ccc; /* set the background color to a light grey */
+  margin: 20px 0; /* add some margin above and below the hr */
+}
+
+/* media query for smaller screens */
+@media (max-width: 768px) {
+  details {
+    width: 100%; /* make the dropdown full-width on smaller screens */
+  }
+  summary {
+    padding: 10px 20px; /* adjust padding for smaller screens */
+  }
+  details p {
+    font-size: 16px; /* reduce font size for smaller screens */
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+</style>
+
+  {% seo %}
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" sizes="1248x1248" href="{{ "/assets/favicon-1248x1248.jpg" | relative_url }}">
+  <link rel="icon" type="image/jpg" sizes="312x312" href="{{ "/assets/favicon-1248x1248.jpg" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="312x312" href="{{ "/assets/favicon-1248x1248.jpg" | relative_url }}">
+
+  <!-- RSS -->
+  {% feed_meta %}
+
+  <!-- Google Analytics-->
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+</head>
