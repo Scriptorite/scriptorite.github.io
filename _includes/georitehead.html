@@ -5,9 +5,7 @@
   <meta name="google-site-verification" content="Jq7ti0H2S7XbJhN1TBIajTwDni7ICrDz7datSE-eIoA" />
   <meta name="description" content="The simplest information sharing site, with forums, posts and much more!" />
   <style>
-    html{
-      colour: #c8b6f0;
-    }
+    
 /* Center the loader */
 #loader {
   width: 40px;
@@ -167,11 +165,17 @@ hr {
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
 
+<style>
+	html{
+      color: #c8b6f0;
+	}
+</style>
+	
   <!-- Favicon -->
   <link rel="icon" type="image/jpg" sizes="1248x1248" href="{{ "/assets/favicon-1248x1248.jpg" | relative_url }}">
   <link rel="icon" type="image/jpg" sizes="312x312" href="{{ "/assets/favicon-1248x1248.jpg" | relative_url }}">
   <link rel="apple-touch-icon" sizes="312x312" href="{{ "/assets/favicon-1248x1248.jpg" | relative_url }}">
-
+	
   <!-- RSS -->
   {% feed_meta %}
 
