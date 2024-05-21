@@ -102,10 +102,12 @@
 	}
 }
 details {
+  bordetails {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
   width: 300px;
+  margin: 0 auto; /* added to center the details element */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -113,10 +115,10 @@ summary {
   font-weight: bold;
   margin-bottom: 10px;
   cursor: pointer;
-  list-style: none; /* added */
-  background-color: #610701; /* changed to match text color */
-  color: #fff; /* added - text color for summary */
-  padding: 10px; /* added */
+  list-style: none;
+  background-color: #ebbc94;
+  color: #fff;
+  padding: 10px;
 }
 
 summary::after {
@@ -131,7 +133,27 @@ details[open] summary::after {
 
 details p {
   margin-bottom: 20px;
-  color: #610701; /* added - text color for content */
+  color: #ebbc94;
+}
+
+hr {
+  border: none; /* remove the default border */
+  height: 1px; /* set the height to 1px */
+  background-color: #ccc; /* set the background color to a light grey */
+  margin: 20px 0; /* add some margin above and below the hr */
+}
+
+/* media query for smaller screens */
+@media (max-width: 768px) {
+  details {
+    width: 100%; /* make the dropdown full-width on smaller screens */
+  }
+  summary {
+    padding: 10px 20px; /* adjust padding for smaller screens */
+  }
+  details p {
+    font-size: 16px; /* reduce font size for smaller screens */
+  }
 }
 @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
 </style>
