@@ -4,7 +4,7 @@ title: Forums - Main Page
 permalink: /forums/
 ---
 
-<img src="https://scriptorite.github.io/SMFBannerV2.png" alt="Banner" class="center">
+<img src="https://scriptorite.github.io/SMFBannerV2.png" alt="Banner" class="center" style="min-height: 32vw;">
 
 ## Scripta Mirabilia Forums
 
