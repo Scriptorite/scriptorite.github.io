@@ -8,5 +8,6 @@ posts: "/posts"
 plugins:
   - jekyll-paginate
   - jekyll-remote-theme
+  - jekyll-feed
 
 disqus: scripta-mirabilia
