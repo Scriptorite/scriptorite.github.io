@@ -18,7 +18,47 @@ layout: default
 <a href="#positionposts" class="button-link">Skip to Posts</a>
 
 <br>
+
+<div class="carousel">
+  <div class="carousel-item">
+    <a href="new-page-1.html">
+      <img src="image1.jpg" alt="Image 1">
+      <div class="carousel-caption">Caption 1</div>
+    </a>
+  </div>
+  <div class="carousel-item">
+    <a href="new-page-2.html">
+      <img src="image2.jpg" alt="Image 2">
+      <div class="carousel-caption">Caption 2</div>
+    </a>
+  </div>
+  <!-- Add more carousel items here -->
+</div>
+
+<br>
 <style>
+.carousel {
+  position: relative;
+}
+
+.carousel-item {
+  display: none;
+  position: relative;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
   .spacer {
     height: 90vw;
     width: 100%;
