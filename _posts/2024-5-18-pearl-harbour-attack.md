@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "{detailed} History - The Reason Behind Pearl Harbour"
+title: "{Detailed} History - The Reason Behind Pearl Harbour"
 author: "Dev10us"
 tags: history facts detailed
 ---
