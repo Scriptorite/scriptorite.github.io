@@ -11,22 +11,22 @@
   "theme_color": "#ffffff",
   "icons": [
     {
-      "src": "/SIcon2.png",
+      "src": "/SIcon3.png",
       "type": "image/png",
       "sizes": "1248x1248"
     },
     {
-      "src": "/SIcon2.png",
+      "src": "/SIcon3.png",
       "type": "image/png",
       "sizes": "312x312"
     },
     {
-      "src": "/SIcon2.png",
+      "src": "/SIcon3.png",
       "type": "image/png",
       "sizes": "312x312"
     },
     {
-      "src": "/SIcon2.png",
+      "src": "/SIcon3.png",
       "type": "image/png"
     }
   ],
