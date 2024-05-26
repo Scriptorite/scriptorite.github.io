@@ -4,7 +4,7 @@ title: Dev Zone
 permalink: /dev/
 ---
 
-<img src= https://github.com/Scriptorite/scriptorite.github.io/assets/112738649/a90c01ad-e186-45ee-8c78-749990869084 class="centre">
+<img src= https://github.com/Scriptorite/scriptorite.github.io/assets/112738649/a90c01ad-e186-45ee-8c78-749990869084 alt="Banner" class="centre">
 
 ### Welcome to the dev portal, where we _showcase_ code, and provide tools for everyone to use!
 
