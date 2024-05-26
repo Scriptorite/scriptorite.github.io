@@ -11,12 +11,7 @@ self.addEventListener("install", (event) => {
     addResourcesToCache([
       "/",
       "/index.html",
-      *.html
-      *.scss
-      *.md
-      *.jpg
-      *.png
-      *.js
+      "/offline.html"
     ]),
   );
 });
