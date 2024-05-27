@@ -3,21 +3,7 @@ layout: default
 ---
 
 {% if paginator.page == 1 %}
-<script>
-var i1 = 0;
-var txt1 = 'Imagine a museum, but online on a simple website.';
-var speed1 = 30;
-​
-function type1() {
-  if (i1 < txt1.length) {
-    document.getElementById("typeeffect1").innerHTML += txt1.charAt(i1);
-    i1++;
-    setTimeout(type1, speed1);
-  }
-}
 
-  window.onload = type1;
-</script>
 <div style="display: block; position: absolute; left: 0; right: 0; width: 100vw; height: auto; min-height: 300px; background-color: #a85b5b; color: #ffffff; padding: 15px; display: inline;">
 <br>
   <!-- Display non-paginated content here -->
@@ -231,6 +217,21 @@ img {
 <br>
 <div class="triangle"></div>
 <br>
+<script>
+var i1 = 0;
+var txt1 = 'Imagine a museum, but online on a simple website.';
+var speed1 = 30;
+​
+function type1() {
+  if (i1 < txt1.length) {
+    document.getElementById("typeeffect1").innerHTML += txt1.charAt(i1);
+    i1++;
+    setTimeout(type1, speed1);
+  }
+}
+
+  window.onload = type1;
+</script>
 {% endif %}
 
 
