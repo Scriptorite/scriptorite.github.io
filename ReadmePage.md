@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /readme/
+title: README
 ---
 
 # Scriptorite
