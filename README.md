@@ -1,13 +1,14 @@
-# Scripta Mirabilia
+# Scriptorite
 
-![IMG_1946](https://github.com/Scripta-Mirabilia/main/assets/112738649/a582e7bc-1a54-453d-b958-55f6b6c536e0)
+![IMG_1946](https://scriptorite.github.io/SBanner.png)
 
 📖 An 1DST project dedicated to creating a useful site for everyone. 
 
 ### Features
-- 🏛️ Knowledge library, contribute to our collection!
+- 🏛️ Knowledge library, contribute to our collection! Includes facts, code and so much more
 - 👥 Forums, a place to discuss
 - 🗒️ Post Series, facts and theories related to a topic
+- 🖼 Exhibits, interactive experiences built by us!
 - 🌐 Open source, free for everyone!
 - 📲 Available on all devices (IOS, Android, Windows) as a downloadable web app
 
