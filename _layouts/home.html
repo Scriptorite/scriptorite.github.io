@@ -41,6 +41,14 @@ layout: default
 
 <br>
 <style>
+  #shakebanner {
+    transition: all 0.4s ease-in-out;
+  }
+
+  #shakebanner:hover {
+    animation: shakeleftright 0.5s infinite;
+  }
+  
 .shakeupdown {
   transition: all 0.3s ease-in-out;
 }
@@ -67,6 +75,25 @@ layout: default
   }
 }
 
+@keyframes shakeleftright {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-7px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(7px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+  
 .carousel {
   position: relative;
 }
