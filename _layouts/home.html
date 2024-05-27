@@ -41,6 +41,32 @@ layout: default
 
 <br>
 <style>
+.shakeupdown {
+  transition: all 0.3s ease-in-out;
+}
+
+.shakeupdown:hover {
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shakeupdown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .carousel {
   position: relative;
 }
@@ -115,7 +141,7 @@ img {
 <p><strong>From Anytime,</strong></p>
  <div class="container">
       <div class="image">
-        <img src="https://scriptorite.github.io/SMLanding1.png">
+        <img src="https://scriptorite.github.io/SMLanding1.png" class="shakeupdown">
       </div>
       <div class="text">
         <h4>Available 24/7, use our services for free!</h4>
@@ -125,7 +151,7 @@ img {
 <p><strong>Anywhere,</strong></p>
 <div class="container">
       <div class="image">
-        <img src="https://scriptorite.github.io/SMLanding2.png">
+        <img src="https://scriptorite.github.io/SMLanding2.png" class="shakeupdown">
       </div>
       <div class="text">
         <h4>Compatable with any device, with full functionality.</h4>
@@ -135,7 +161,7 @@ img {
 <p><strong>Completely free and open source!</strong></p>
 <div class="container">
       <div class="image">
-        <img src="https://scriptorite.github.io/SMLanding3.png">
+        <img src="https://scriptorite.github.io/SMLanding3.png" class="shakeupdown">
       </div>
       <div class="text">
         <h4>Fully open source, no premium or paid plans too!</h4>
