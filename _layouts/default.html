@@ -62,13 +62,10 @@ function showPage() {
   </div>
 </div>
   <script>
-    Great idea! To make the modal window display only once per session, you can use JavaScript's `sessionStorage` feature to store a flag indicating whether the modal has been shown before.
-
-Here's an updated JavaScript code snippet:
 
 const currentUrl = window.location.href;
 if (!currentUrl.includes("github.io")) {
-  if (!sessionStorage.getItem("modalShown")) {
+    document.getElementById("modal").classList.add("show");
     document.getElementById("modal").style.display = "block";
     sessionStorage.setItem("modalShown", "true");
   }
